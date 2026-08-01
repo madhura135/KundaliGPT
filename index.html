@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KundaliGPT - AI Astrologer</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Immersive space backdrop layer -->
+    <div class="stars-overlay"></div>
+
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <h1 class="logo-text">🔮 KundaliGPT</h1>
+            <p class="subtitle">Your personalized AI Vedic Astrologer</p>
+        </header>
+
+        <!-- Main Workspace -->
+        <main>
+            <!-- User Input Form -->
+            <form id="astroForm" class="glass-container">
+                <div class="input-group">
+                    <label for="userName">Full Name</label>
+                    <input type="text" id="userName" placeholder="Your name" required autocomplete="off">
+                </div>
+                
+                <!-- Side-by-Side row for Date and Time fields -->
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="birthDate">Date of Birth</label>
+                        <input type="date" id="birthDate" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="birthTime">Time of Birth</label>
+                        <input type="time" id="birthTime" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="birthPlace">Place of Birth</label>
+                    <input type="text" id="birthPlace" placeholder="City, Country" required autocomplete="off">
+                </div>
+
+                <button type="submit" id="submitBtn">Generate Reading ✨</button>
+            </form>
+
+            <!-- Loading Spinner State (Hidden dynamically by default) -->
+            <div id="loadingContainer" class="hidden status-box">
+                <div class="cosmic-spinner"></div>
+                <p class="loading-text">Mapping your planetary alignments...</p>
+            </div>
+
+            <!-- Output Display Card (Hidden dynamically by default) -->
+            <section id="resultCard" class="glass-container hidden result-box">
+                <h2 class="result-title">✨ Your Cosmic Matrix ✨</h2>
+                <!-- JavaScript will inject the reading string inside this div -->
+                <div id="readingOutput"></div>
+                <button type="button" id="resetBtn" class="secondary-btn">Ask the Stars Again</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Link to your JavaScript engine -->
+    <script src="script.js"></script>
+</body>
+</html>
