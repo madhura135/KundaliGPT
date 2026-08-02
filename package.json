@@ -1,0 +1,27 @@
+{
+  "name": "kundaligpt",
+  "version": "1.0.0",
+  "description": "A web app that generates personalized Vedic Astrology and Kundali readings using OpenAI. Built with HTML, CSS, and pure asynchronous JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhura135/KundaliGPT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/madhura135/KundaliGPT/issues"
+  },
+  "homepage": "https://github.com/madhura135/KundaliGPT#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
