@@ -18,3 +18,6 @@ A web app that generates personalized Vedic Astrology and Kundali readings using
 8.Error handling — graceful try/catch/finally flow on both frontend and backend, with clear user-facing error states instead of raw crashes.
 
 9.CORS-enabled API — backend explicitly configured to safely accept cross-origin requests from the frontend during local development.
+
+## Demo  ![KundaliGPT Demo](./assets/Demo_KundaliGPT.gif)
+
