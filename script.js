@@ -37,7 +37,7 @@ astroForm.addEventListener('submit', async function (event) {
 
     // 6. Trigger the Asynchronous API network call using Try/Catch/Finally
     try {
-    const response = await fetch('http://localhost:3000/api/kundali', {
+    const response = await fetch('https://kundaligpt.onrender.com/api/kundali', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
